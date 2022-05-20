@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+
+    <h1>Contact Form</h1>
+
+    <form method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your Name" minlength="2"> <br> <br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your Last Name"><br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass"><br><br>
+
+        Gender:
+
+        Male : <input type="radio" name="gender" id="male">
+        Female : <input type="radio" name="gender" id="female">
+        Other : <input type="radio" name="gender" id="other"> <br><br>
+
+
+        Hobbies:
+        <label for="cricket">Cricket :</label>
+        <input type="checkbox" name="cricket" id="cricket">
+        Football : <input type="checkbox" name="Football" id="Football">
+        Reading : <input type="checkbox" name="Reading" id="Reading">
+        Swimming : <input type="checkbox" name="Swimming" id="Swimming"><br><br>
+
+
+        <label for="Books">Select Your Book</label>
+        <select name="books" id="Books">
+
+            <option>Book1</option>
+            <option>Book2</option>
+            <option>Book3</option>
+            <option>Book4</option>
+            <option>Book5</option>
+        </select><br><br>
+
+
+        <label for="message">Enter your message</label>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea><br><br>
+
+        <label for="browsers">Select Your Browser</label>
+        <input list="browsers" name="browser">
+
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br><br>
+
+
+        <label for="color">Select Your Color</label>
+        <input type="color" name="color" id="color"><br><br>
+
+
+        <label for="bdate">Select your birth date:</label>
+        <input type="date" name="bdate" id=" bdate"><br><br>
+
+        <label for="num">Enter your favoraite number:</label>
+        <input type="number" name="num" id="num" step="2"><br><br>
+
+
+        <label for="file">Upload Your File</label>
+        <input type="file" name="file" id="file">
+
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </form>
+
+
+
+</body>
+
+</html>
